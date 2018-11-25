@@ -5,6 +5,7 @@ const app = express();
 
 const gqSchema = {
   schema,
+  graphiql: true,
 };
 
 app.use('/graphql', graphqlHttp(gqSchema));
