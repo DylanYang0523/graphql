@@ -1,9 +1,10 @@
 const express = require('express');
 const graphqlHttp = require('express-graphql');
+const schema = require('./schema/schema');
 const app = express();
 
 const gqSchema = {
-
+  schema,
 };
 
 app.use('/graphql', graphqlHttp(gqSchema));
