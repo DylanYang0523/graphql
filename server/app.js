@@ -7,7 +7,10 @@ const app = express();
 
 const username = mLabConfig.username;
 const password = mLabConfig.password;
-mongoose.connect(`mongodb://${username}:${password}@ds111895.mlab.com:11895/github-graphql`);
+const address = mLabConfig.address;
+const port = mLabConfig.port;
+const db = mLabConfig.db;
+mongoose.connect(`mongodb://${username}:${password}@${address}:${port}/${db}`);
 mongoose.connection.once('open', () => {
   console.log('connected to database');
 });

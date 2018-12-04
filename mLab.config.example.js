@@ -1,4 +1,7 @@
 module.exports = {
   username: 'yourusername',
-  password: 'yourpassword'
+  password: 'yourpassword',
+  address: 'yourmlabaddress',
+  port: 'yourdbport',
+  db: 'yourdbname',
 };
