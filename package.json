@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "commitmsg": "validate-commit-msg-regexp"
+  },
+  "dependencies": {
+    "husky": "^1.2.0",
+    "validate-commit-msg-regexp": "^1.0.1"
+  }
+}
