@@ -1,7 +1,7 @@
 const express = require('express');
 const graphqlHttp = require('express-graphql');
 const mongoose = require('mongoose');
-const mLabConfig = require('../mLab.config');
+const mLabConfig = require('./mLab.config');
 const schema = require('./schema/schema');
 const app = express();
 
