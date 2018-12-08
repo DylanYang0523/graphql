@@ -3,7 +3,10 @@ const graphqlHttp = require('express-graphql');
 const mongoose = require('mongoose');
 const mLabConfig = require('./mLab.config');
 const schema = require('./schema/schema');
+const cors = require('cors');
+
 const app = express();
+app.use(cors());
 
 const username = mLabConfig.username;
 const password = mLabConfig.password;
