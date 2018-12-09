@@ -4,20 +4,19 @@ import { getBookList } from '../queries/query';
 
 class BookList extends React.Component {
   _renderBooks() {
-    const { data } = this.props;
+    const { data, updateCurrentBookId } = this.props;
     if (data.loading) {
       return (<div>Loading...</div>);
     }
     return (
       data.books.map(book => {
         return (
-          <li key={book.id}>{book.name}</li>
+          <li key={book.id} onClick={() => updateCurrentBookId(book.id)}>{book.name}</li>
         )
       })
     );
   }
   render() {
-    console.log('booklist', this.props);
     return (
       <React.Fragment>
         <ul id="book-list">
