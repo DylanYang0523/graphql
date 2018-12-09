@@ -12,11 +12,11 @@ class BookDetail extends React.Component {
     return (
       <React.Fragment>
         { author && author.name &&
-          <div>Author: {author.name}</div>
+          <div className="term"><label>author:</label> {author.name}</div>
         }
         { author && author.books &&
           <React.Fragment>
-            <div>Other Books from {author.name} </div>
+            <div className="term">other books from {author.name} </div>
             <ul>
               {this._renderAuthorBookList(author.books)}
             </ul>
@@ -28,13 +28,12 @@ class BookDetail extends React.Component {
   render() {
     const { data } = this.props;
     const { book } = data;
-    if (!book) return <div>No book selected...</div>;
+    if (!book) return <div className="hint">select a book from the list to check the detail...</div>;
     const author = book.author
     return (
-      <div>
-        <h3>BookDetail</h3>
-        <div>Name: {book.name}</div>
-        <div>Genre: {book.genre}</div>
+      <div className="book-detail-ctn">
+        <div className="term"><label>name:</label> {book.name}</div>
+        <div className="term"><label>genre:</label> {book.genre}</div>
         {this._renderAuthorInfo(author)}
       </div>
     );

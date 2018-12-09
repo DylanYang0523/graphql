@@ -5,7 +5,7 @@ import { getBookList } from '../queries/query';
 class BookList extends React.Component {
   _renderBooks() {
     const { data, updateCurrentBookId } = this.props;
-    if (data.loading) {
+    if (data.loading || !data.books) {
       return (<div>Loading...</div>);
     }
     return (

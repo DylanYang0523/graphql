@@ -25,9 +25,7 @@ class App extends React.Component {
     return (
       <ApolloProvider client={client} >
         <div className="App">
-          <h1 className="App-header">
-            GRAPHQL COURSE
-          </h1>
+          <h1 className="App-header">Reading List</h1>
           <BookList updateCurrentBookId={this.updateCurrentBookId}/>
           <BookDetail currentBookId={currentBookId}/>
           <AddBook />

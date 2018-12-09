@@ -4,3 +4,107 @@ body {
   background-color: #eee;
   font-family: sans-serif;
 }
+
+h1 {
+  text-align: center;
+  color: #de7a7a;
+}
+
+/* Book List */
+#book-list {
+  list-style-type: none;
+  color: #f15da5;
+  text-align: center;
+}
+
+#book-list li {
+  display: inline-block;
+  width: auto;
+  font-weight: bold;
+  border: 1px solid #f15da5;
+  border-radius: 5px;
+  padding: 10px 30px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+/* Add Book */
+#add-book {
+  background-color: #8acaa7;
+  padding: 15px 20px;
+  border-radius: 15px;
+  display: inline-block;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+.basic-input {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #a02461;
+  letter-spacing: 0.3;
+}
+
+.basic-input label {
+  margin-right: 8px;
+}
+
+select {
+  font-size: 16px;
+  color: #a02461;
+}
+
+select:focus {
+  outline: none;
+}
+
+input {
+  border: none;
+  font-size: 16px;
+  padding: 3px 5px;
+  color: #a02461;
+}
+
+input:focus {
+  outline: none;
+}
+
+#add-btn {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  border-radius: 15px;
+  background-color: #a02461;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+/* Book Detail */
+.hint {
+  color: #000;
+  text-align: center;
+  margin-top: 45px;
+}
+.book-detail-ctn {
+  background-color: #156288;
+  color: white;
+  padding: 30px 15px;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  margin: 0px 2px;
+}
+.book-detail-ctn label {
+  margin-right: 3px;
+}
+.book-detail-ctn .term {
+  margin-bottom: 5px;
+}
+.book-detail-ctn li {
+  margin-bottom: 3px;
+}
