@@ -1,6 +1,8 @@
 {
-  "scripts": {
-    "commitmsg": "validate-commit-msg-regexp"
+  "husky": {
+    "hooks": {
+      "commit-msg": "validate-commit-msg-regexp"
+    }
   },
   "dependencies": {
     "husky": "^1.2.0",
